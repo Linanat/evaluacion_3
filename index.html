@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/scss/prueba3.css">
+</head>
+<body>
+    
+    <div class="cuerpo" >     
+            <img class="pikachu_cuerpo" src="assets/img/pikachu_cuerpo.png" alt="">
+            <img class="pikachu_ojo1" src="assets/img/pikachu_ojo1.png" alt="">
+            <img class="pikachu_ojo2" src="assets/img/pikachu_ojo2.png" alt="">                
+            <img class="boca_pikachu" src="assets/img/pikachu_boca.png" alt="">
+            <img  class="pikachu_cola" src="assets/img/pikachu_cola.png" alt="">
+            <img class="pikachu_brazo1"  src="assets/img/pikachu_brazo 1.png" alt="">
+            <img class="pikachu_brazo2"  src="assets/img/pikachu_brazo 2.png" alt="">          
+    </div>
+    <button id="click" class="btn btn-primary">click</button> 
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            let cuerpo = $('.pikachu_cuerpo');
+            let ojo1 = $('.pikachu_ojo1');
+            let ojo2 = $('.pikachu_ojo2');
+            let boca = $('.boca_pikachu');
+            let cola = $('.pikachu_cola');
+            let brazo1 = $('.pikachu_brazo1');
+            let brazo2 = $('.pikachu_brazo2');
+            let boton = $('#click');
+
+            boton.click(function(){
+                brazo1.css({
+                    'transition': 'transform 1s',
+                    'transform': 'rotate(180deg)'
+                });
+
+                brazo2.css({
+                    'transition': 'transform 1s',
+                    'transform': 'rotate(180deg)'
+                });
+
+                setTimeout(function(){
+                    brazo1.css('transform', 'rotate(0deg)');
+                    brazo2.css('transform', 'rotate(0deg)');
+                }, 1000);
+            });
+        });
+
+    </script>
+</body>
+</html>

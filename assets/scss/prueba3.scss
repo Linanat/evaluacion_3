@@ -1,0 +1,68 @@
+// Fuente
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+// Framework
+@import "../bootstrap-5.3.3/scss/bootstrap.css";
+
+// Estilos
+body{
+   background-image: url('../img/pokemon-city.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+}
+
+.pikachu_cuerpo {
+   height: 600px;
+   width: auto;
+}
+
+.pikachu_ojo1 {
+   height: 60px;
+   width: auto;
+   position: absolute;
+   top: 200px;
+   left: 140px;
+}
+
+.pikachu_ojo2 {
+   height: 60px;
+   width: auto;
+   position: absolute;
+   top: 200px;
+   left: 220px;
+}
+
+.boca_pikachu {
+   height: 70px;
+   width: auto;
+   position: absolute;
+   top: 260px;
+   left: 150px;
+}
+
+.pikachu_cola {
+   height: 350px;
+   width: auto;
+   position: absolute;
+   top: 150px;
+   left: 280px;
+}
+
+.pikachu_brazo1 {
+   height: 140px;
+   width: auto;
+   position: absolute;
+   top: 360px;
+   left: 110px;
+}
+
+.pikachu_brazo2 {
+   height: 140px;
+   width: auto;
+   position: absolute;
+   top: 360px;
+   left: 220px;
+   transform-origin: center;
+}
